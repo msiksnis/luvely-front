@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "styled-components/macro";
-import DropdownTreatments from "../header/Dropdowns/DropdownTreatments";
+import DropdownTreatments from "../Header/Dropdowns/DropdownTreatments";
 import DropdownGifts from "./Dropdowns/DropdownGifts";
 import Cart from "../Cart";
 import { useUser } from "../User";

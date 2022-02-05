@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import tw from "twin.macro";
 import "styled-components/macro";
-import DropdownTreatments from "../header/Dropdowns/DropdownTreatments";
+import DropdownTreatments from "../Header/Dropdowns/DropdownTreatments";
 import DropdownPrice from "./Dropdowns/DropdownPrice";
 import DropdownGifts from "./Dropdowns/DropdownGifts";
 import DropdownAccount from "./Dropdowns/DropdownAccount";
