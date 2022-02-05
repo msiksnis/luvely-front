@@ -1,0 +1,169 @@
+{
+  "name": "luvely-frontend",
+  "version": "1.0.0",
+  "description": "React, GraphQL, Next and Apollo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 7777",
+    "build": "next build",
+    "start": "next start -p 7777",
+    "test": "NODE_ENV=test jest --watch",
+    "heroku-postbuild": "next build",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "eslintConfig": {
+    "extends": [
+      ""
+    ],
+    "rules": {
+      "react/jsx-props-no-spreading": 0
+    }
+  },
+  "author": "Martins Siksnis",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@apollo/client": "^3.3.8",
+    "@apollo/link-error": "^2.0.0-beta.3",
+    "@apollo/react-ssr": "^4.0.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.7",
+    "@mui/styles": "^5.2.3",
+    "@radix-ui/react-label": "^0.1.4",
+    "@radix-ui/react-popover": "0.1.4",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
+    "antd": "^4.18.2",
+    "apollo-upload-client": "^14.1.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "date-fns": "^2.16.1",
+    "downshift": "^6.0.12",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "framer-motion": "^5.5.5",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "graphql-upload": "^11.0.0",
+    "lodash.debounce": "^4.0.8",
+    "next": "^12.0.10",
+    "next-with-apollo": "^5.1.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-material-ui-carousel": "^3.1.1",
+    "react-rellax": "^1.0.3",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^5.0.0",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.3.3",
+    "styled-components.macro": "^1.0.0",
+    "twin.macro": "^2.8.1",
+    "waait": "^1.0.5"
+  },
+  "devDependencies": {
+    "@apollo/react-testing": "^4.0.0",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "autoprefixer": "^10.2.6",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-styled-components": "^2.0.2",
+    "babel-plugin-twin": "^1.0.2",
+    "casual": "^1.6.2",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-wesbos": "^1.0.1",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
+    "postcss": "^8.3.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.5",
+    "react-test-renderer": "^17.0.1",
+    "tailwindcss": "^2.2.19"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "test": {
+        "presets": [
+          [
+            "next/babel",
+            {
+              "preset-env": {
+                "modules": "commonjs"
+              }
+            }
+          ]
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "babelMacros": {
+    "twin": {
+      "styled": {
+        "import": "default",
+        "from": "styled-components",
+        "preset": "styled-components",
+        "autoCssProp": false
+      }
+    }
+  }
+}
