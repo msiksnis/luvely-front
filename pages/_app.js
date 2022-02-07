@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps, apollo }) {
     <ApolloProvider client={apollo}>
       <ApplicationStateProvider>
         <Head>
-          <link rel="shortcut icon" href="/static/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <meta
             name="viewport"
             content="width=device-width, , initial-scale=1.0, maximum-scale=1.0"
